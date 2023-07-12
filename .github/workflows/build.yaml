@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: alexshvid/tensorflow-inference:2.12.1-cpu-py310-ubuntu20.04-sagemaker
+    runs-on: ubuntu:latest
     steps:
       - uses: actions/checkout@v3
 
@@ -26,7 +26,7 @@ jobs:
       - name: list python packages
         run: pip list
 
-      - name: execute inference script 
+      - name: execute inference script
         env:
           COMET_API_KEY: ${{ secrets.COMET_API_KEY }}
           COMET_MPM: ${{ secrets.COMET_MPM }}
