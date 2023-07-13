@@ -25,7 +25,7 @@ MPM = CometMPM(
 print(f"MPM enabled {enabledMPM}")
 
 # Force the MPM SDK to send everything
-for i in range(1001):
+for i in range(500):
     prediction_id = str(uuid4())
     MPM.log_event(prediction_id=prediction_id, output_value=0)
     MPM.log_event(prediction_id=prediction_id, input_features={"age": 32})
