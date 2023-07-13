@@ -10,6 +10,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container: alexshvid/tensorflow-inference:2.12.1-cpu-py310-ubuntu20.04-sagemaker
     steps:
       - uses: actions/checkout@v3
 
