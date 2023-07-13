@@ -17,7 +17,7 @@ if os.getenv("COMET_MPM", "") != "":
 MPM = CometMPM(
     api_key=os.getenv("COMET_API_KEY", "COMET_API_KEY"),
     workspace_name="knock",
-    model_name="ai-email-nnet-bnorm",
+    model_name="ai-email-nnet-bnorm-gh",
     model_version="1.0.0",
     disabled=not enabledMPM,
 )
